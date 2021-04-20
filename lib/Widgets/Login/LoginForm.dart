@@ -22,7 +22,7 @@ class LoginForm extends StatelessWidget {
             'WELCOME!',
             style: GoogleFonts.raleway(
               color: ColorPalette.white,
-              fontSize: 35.0,
+              fontSize: 36.0,
               fontWeight: FontWeight.bold,
             ),
           ),

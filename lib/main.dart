@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:login/Routes/CreateAccount.dart';
 import 'package:login/Routes/Login.dart';
 import 'package:login/Routes/Splashscreen.dart';
 
@@ -21,6 +22,10 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: Login.routeName,
           page: () => Login(),
+        ),
+        GetPage(
+          name: CreateAccount.routeName,
+          page: () => CreateAccount(),
         ),
       ],
     );

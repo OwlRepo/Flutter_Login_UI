@@ -16,14 +16,14 @@ class LoginBanner extends StatelessWidget {
               TextSpan(
                 text: 'CREATE BETTER\n',
                 style: GoogleFonts.raleway(
-                  color: ColorPalette.orange,
+                  color: ColorPalette.white,
                   fontSize: 30.0,
                 ),
               ),
               TextSpan(
                 text: 'TOGETHER\n',
                 style: GoogleFonts.raleway(
-                  color: ColorPalette.orange,
+                  color: ColorPalette.white,
                   fontSize: 50.0,
                   fontWeight: FontWeight.bold,
                 ),
@@ -31,7 +31,7 @@ class LoginBanner extends StatelessWidget {
               TextSpan(
                 text: '\nJoin our community.',
                 style: GoogleFonts.raleway(
-                  color: ColorPalette.white,
+                  color: ColorPalette.black,
                   fontSize: 20.0,
                 ),
               ),

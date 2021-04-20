@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:login/Constants/ColorPalette.dart';
+import 'package:login/Routes/CreateAccount.dart';
 import 'package:login/Routes/Login.dart';
 
 class LoginButtons extends StatelessWidget {
@@ -13,6 +15,13 @@ class LoginButtons extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: screenHeight! * 0.5,
+      decoration: BoxDecoration(
+        color: ColorPalette.black,
+        borderRadius: BorderRadius.only(
+          topRight: Radius.circular(40.0),
+          topLeft: Radius.circular(40.0),
+        ),
+      ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -57,10 +66,7 @@ class LoginButtons extends StatelessWidget {
             ),
             child: OutlinedButton(
               onPressed: () {
-                Login.openModal(
-                  context: context,
-                  isLoginForm: false,
-                );
+                Get.toNamed(CreateAccount.routeName);
               },
               style: OutlinedButton.styleFrom(
                 primary: ColorPalette.orange,

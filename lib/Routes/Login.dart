@@ -46,7 +46,7 @@ class _LoginState extends State<Login> {
     var _screenWidth = MediaQuery.of(context).size.width;
     var _screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
-      backgroundColor: ColorPalette.black,
+      backgroundColor: ColorPalette.orange,
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(

@@ -14,7 +14,7 @@ class _SplashscreenState extends State<Splashscreen> {
   @override
   void initState() {
     super.initState();
-    // Future.delayed(Duration(seconds: 5), () => Get.toNamed(Login.routeName));
+    Future.delayed(Duration(seconds: 5), () => Get.toNamed(Login.routeName));
   }
 
   @override

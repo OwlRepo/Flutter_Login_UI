@@ -4,7 +4,7 @@ import 'package:login/Constants/ColorPalette.dart';
 
 class LoginForm extends StatelessWidget {
   final double screenHeight, screenWidth;
-  LoginForm({@required this.screenHeight, @required this.screenWidth});
+  LoginForm({required this.screenHeight, required this.screenWidth});
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -42,6 +42,9 @@ class LoginForm extends StatelessWidget {
             autofocus: true,
             textInputAction: TextInputAction.next,
             onTap: () {},
+            style: GoogleFonts.raleway(
+              color: ColorPalette.white,
+            ),
             decoration: InputDecoration(
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10.0),
@@ -74,9 +77,13 @@ class LoginForm extends StatelessWidget {
             textAlignVertical: TextAlignVertical.center,
             cursorColor: ColorPalette.orange,
             textInputAction: TextInputAction.done,
+            obscureText: true,
             onFieldSubmitted: (_) {
               print('done');
             },
+            style: GoogleFonts.raleway(
+              color: ColorPalette.white,
+            ),
             decoration: InputDecoration(
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10.0),

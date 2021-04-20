@@ -7,7 +7,7 @@ import 'package:login/Widgets/Login/LoginForm.dart';
 class Login extends StatefulWidget {
   static const routeName = '/login';
   static void openModal(
-      {@required BuildContext context, @required bool isLoginForm}) {
+      {required BuildContext context, required bool isLoginForm}) {
     var _screenHeight = MediaQuery.of(context).size.height;
     var _screenWidth = MediaQuery.of(context).size.width;
     showModalBottomSheet(

@@ -5,21 +5,21 @@ import 'package:login/Constants/ColorPalette.dart';
 import 'package:login/Routes/Login.dart';
 
 class LoginButtons extends StatelessWidget {
-  final double screenHeight, screenWidth;
+  final double? screenHeight, screenWidth;
 
   LoginButtons({this.screenHeight, this.screenWidth});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: screenHeight * 0.5,
+      height: screenHeight! * 0.5,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Padding(
             padding: EdgeInsets.symmetric(
-              horizontal: screenWidth * 0.15,
+              horizontal: screenWidth! * 0.15,
             ),
             child: OutlinedButton(
               onPressed: () {
@@ -44,7 +44,7 @@ class LoginButtons extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.symmetric(
-              horizontal: screenWidth * 0.20,
+              horizontal: screenWidth! * 0.20,
             ),
             child: Divider(
               color: Colors.grey,
@@ -53,7 +53,7 @@ class LoginButtons extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.symmetric(
-              horizontal: screenWidth * 0.15,
+              horizontal: screenWidth! * 0.15,
             ),
             child: OutlinedButton(
               onPressed: () {
@@ -89,8 +89,8 @@ class LoginButtons extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.symmetric(
-              horizontal: screenWidth * 0.15,
-              vertical: screenHeight * 0.030,
+              horizontal: screenWidth! * 0.15,
+              vertical: screenHeight! * 0.030,
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
